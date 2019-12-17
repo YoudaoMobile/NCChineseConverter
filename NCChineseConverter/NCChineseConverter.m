@@ -67,12 +67,14 @@
     NSInteger max = oriString.length - i;
     NSInteger j;
     for (j = max; j > 0; j--) {
-      NSRange range = NSMakeRange(i, j);
-      NSString *subStr = [oriString substringWithRange:range];
-      if (useDict[subStr]) {
-        result = [result stringByAppendingString:useDict[subStr]];
-        break;
-      }
+        @autoreleasepool {
+            NSRange range = NSMakeRange(i, j);
+            NSString *subStr = [oriString substringWithRange:range];
+            if (useDict[subStr]) {
+              result = [result stringByAppendingString:useDict[subStr]];
+              break;
+            }
+        }
     }
     if (j == 0) {
       result = [result stringByAppendingString:[oriString substringWithRange:NSMakeRange(i, 1)]];
