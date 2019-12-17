@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NCChineseConverter"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "NCChineseConverter is an Objective-C based chinese coverter for converting between Hans and Hant."
   s.homepage     = "https://github.com/nickcheng/NCChineseConverter"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
