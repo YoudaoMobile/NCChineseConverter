@@ -6,6 +6,10 @@ NCChineseConverter 是一个 **基于 Objective-C** 的中文简繁正转换库.
 
 本库的基本实现原理: 从 Mediawiki 提供的[字典](https://github.com/wikimedia/mediawiki/raw/master/languages/data/ZhConversion.php)中提取数据, 转换为自己需要的格式, 然后用最大正向匹配算法进行字符替换.
 
+## 版本 ##
+v1.0.4 修复在iOS13.2上长文本内存爆表崩溃的问题 (example里已替换为这个case的数据)  
+v1.0.5 增加watch平台支持
+
 ### 特点 ###
 
 * 可以只使用单一词库
